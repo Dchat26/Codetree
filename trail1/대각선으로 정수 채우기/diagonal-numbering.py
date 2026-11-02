@@ -3,13 +3,11 @@ a, b = map(int, input().split())
 answer = [[0] * b for _ in range(a)]
 
 num = 1
-p = 1
 for i in range(a + b - 1):
     if i < b:
         x, y = 0, i
     else:
-        x, y = p, b - 1
-        p += 1
+        x, y = i - b + 1, b - 1
 
     while True:
         answer[x][y] = num
