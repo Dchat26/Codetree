@@ -13,5 +13,6 @@ for a, b in result:
         a1, b1 = c
         if a == a1 and b == b1:
             answer.append(idx)
+            break
 
 print(*answer)
